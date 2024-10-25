@@ -439,7 +439,7 @@ def CG(n=9, max_iter=1000, tol=1e-5):
 
     for k in range(max_iter):
 
-        # 计算步长 alpha
+        # 计算步长 alpha_k
         alpha_k = np.sum(r**2) / np.sum(
             4 * p[1:-1, 1:-1] * p[1:-1, 1:-1]
             - p[1:-1, :-2] * p[1:-1, 1:-1]
