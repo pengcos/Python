@@ -377,7 +377,7 @@ def gradient_descent_without_A(n=9, max_iter=1000, tol=1e-5):
     u = np.zeros([n + 2, n + 2])
     h = 1 / (n + 1)
     f = np.full([n + 2, n + 2], h**2 * 2)
-    
+
     u[0, :] = 0
     u[-1, :] = 0
     u[:, 0] = 0
@@ -520,7 +520,7 @@ def main():
     # Q2huatu(Q2block_j())
     # Q2huatu(Q2block_SOR())
     # Q2huatu(Q2block_SSOR())
-    
+
 
 if __name__ == "__main__":
     main()
